@@ -1,0 +1,95 @@
+##
+# CAS Cloud Bus Configuration
+#
+spring:
+  cloud:
+    bus:
+      enabled: false
+##
+# CAS AspectJ 配置
+#
+  aop:
+    proxy-target-class: true
+    auto: true
+  http:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
+##
+# CAS Thymeleaf View 配置
+#
+  thymeleaf:
+    mode: HTML
+    cache: true
+    encoding: UTF-8
+##
+# CAS Server Context 配置
+#
+server:
+  connection-timeout: 20000
+  context-path: /cas
+  tomcat:
+    basedir: build/tomcat
+    remote-ip-header: X-FORWARDED-FOR
+    uri-encoding: UTF-8
+    protocol-header: X-Forwarded-Proto
+    protocol-header-https-value: https
+    port-header: X-Forwarded-Port
+    max-threads: 10
+    max-http-post-size: 2097152
+    accesslog:
+      pattern: '%t %a \%r\ %s (%D ms)'
+      suffix: .log
+      enabled: true
+  port: 8443
+  max-http-header-size: 2097152
+##
+# CAS Web Application Session 配置
+#
+  session:
+    tracking-modes: COOKIE
+    cookie:
+      http-only: true
+    timeout: 300
+  context-parameters:
+    isLog4jAutoInitializationDisabled: true
+  compression:
+    mime-types: application/javascript,application/json,application/xml,text/html,text/xml,text/plain
+    enabled: true
+  error:
+    include-stacktrace: ALWAYS
+##
+# 证书配置
+#
+  ssl:
+    key-password: changeit
+    key-store: file:/etc/cas/thekeystore
+    key-store-password: changeit
+  use-forward-headers: true
+security:
+  basic:
+    path: /cas/status/**
+    authorize-mode: role
+    enabled: false
+endpoints:
+  restart:
+    enabled: false
+  sensitive: true
+  shutdown:
+    enabled: false
+  enabled: false
+##
+# CAS 身份验证凭证
+#
+cas:
+  authn:
+    accept:
+      users: tingfeng::tingfeng
+management:
+  security:
+    sessions: if_required
+    roles: ACTUATOR,ADMIN
+    enabled: true
+  context-path: /status
+  add-application-context-header: false
