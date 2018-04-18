@@ -9,6 +9,7 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.util.Base64Utils;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.UnsupportedEncodingException;
@@ -29,6 +30,11 @@ public class SysUserController {
         SysUser user = null;
         try {
             UserTemp userTemp = obtainUserFormHeader(httpHeaders);
+
+            //当没有 传递 参数的情况
+            if(userTemp == null){
+                return new ResponseEntity<SysUser>(HttpStatus.NOT_FOUND);
+            }
 
             //尝试查找用户库是否存在
             user = sysUserMapper.getSysUser(userTemp.username);
@@ -78,6 +84,9 @@ public class SysUserController {
          */
         //根据官方文档，当请求过来时，会通过把用户信息放在请求头authorization中，并且通过Basic认证方式加密
         String authorization = httpHeaders.getFirst("authorization");//将得到 Basic Base64(用户名:密码)
+        if(StringUtils.isEmpty(authorization)){
+            return null;
+        }
         String baseCredentials = authorization.split(" ")[1];
         String usernamePassword = new String(Base64Utils.decodeFromString(baseCredentials), "UTF-8");//用户名:密码
         logger.debug("login user: " + usernamePassword);
