@@ -66,10 +66,17 @@
             <scope>runtime</scope>
         </dependency>
 
-        <!--Rest认证-->
+        <!-- 数据库驱动 -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>6.0.6</version>
+        </dependency>
+
+        <!--jdbc认证需要添加的，这个是cas的依赖包-->
         <dependency>
             <groupId>org.apereo.cas</groupId>
-            <artifactId>cas-server-support-rest-authentication</artifactId>
+            <artifactId>cas-server-support-jdbc</artifactId>
             <version>${cas.version}</version>
         </dependency>
 

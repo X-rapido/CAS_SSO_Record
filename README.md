@@ -15,7 +15,9 @@
 
 目录5 => 对应 [Cas 5.2.x版本使用 —— 单点登录JDBC认证（五）](http://www.ibloger.net/article/3119.html)
 
-目录6 => 对应 [Cas 5.2.x版本使用 —— 单点登录自定义REST认证（六）](http://www.ibloger.net/article/3120.html)
+目录6 => 对应 [Cas 5.2.x版本使用 —— 自定义密码验证（六）](http://www.ibloger.net/article/3123.html)
+
+目录7 => 对应 [Cas 5.2.x版本使用 —— 单点登录自定义REST认证（七）](http://www.ibloger.net/article/3120.html)
 
 
 ### 目录
@@ -25,4 +27,5 @@
 - [Cas 5.2.x版本使用 —— 修改默认的用户名和密码（三）](http://www.ibloger.net/article/3116.html)
 - [Cas 5.2x版本使用 —— 通过yml的方式配置（四）](http://www.ibloger.net/article/3118.html)
 - [Cas 5.2.x版本使用 —— 单点登录JDBC认证（五）](http://www.ibloger.net/article/3119.html)
-- [Cas 5.2.x版本使用 —— 单点登录自定义REST认证（六）](http://www.ibloger.net/article/3120.html)
+- [Cas 5.2.x版本使用 —— 自定义密码验证（六）](http://www.ibloger.net/article/3123.html)
+- [Cas 5.2.x版本使用 —— 单点登录自定义REST认证（七）](http://www.ibloger.net/article/3120.html)
