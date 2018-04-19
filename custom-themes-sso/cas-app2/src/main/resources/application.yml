@@ -1,0 +1,11 @@
+
+logging:
+  file: "logs/app2.log"
+info:
+  name : "App2项目"
+
+server:
+  #端口号
+  port: 8282
+  context-path: /
+  address: app2.com
