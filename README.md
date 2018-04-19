@@ -19,6 +19,7 @@
 
 目录7 => 对应 [Cas 5.2.x版本使用 —— 单点登录自定义REST认证（七）](http://www.ibloger.net/article/3120.html)
 
+目录simple-sso => 对应 [Cas 5.2.x版本使用 —— 实现SSO单点登录（八）](http://www.ibloger.net/article/3126.html)
 
 ### 目录
 
@@ -29,3 +30,4 @@
 - [Cas 5.2.x版本使用 —— 单点登录JDBC认证（五）](http://www.ibloger.net/article/3119.html)
 - [Cas 5.2.x版本使用 —— 自定义密码验证（六）](http://www.ibloger.net/article/3123.html)
 - [Cas 5.2.x版本使用 —— 单点登录自定义REST认证（七）](http://www.ibloger.net/article/3120.html)
+- [Cas 5.2.x版本使用 —— 实现SSO单点登录（八）](http://www.ibloger.net/article/3126.html)

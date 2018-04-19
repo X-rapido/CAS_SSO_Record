@@ -1,0 +1,10 @@
+
+logging:
+  file: "logs/app1.log"
+info:
+  name : "App1项目"
+
+server:
+  port: 8181
+  context-path: /
+  address: app1.com
