@@ -48,6 +48,8 @@ GitHub地址：https://github.com/X-rapido/CAS_SSO_Record
 
 目录iframe-sso => 对应 [Cas 5.2.x版本使用 —— 客户端使用iframe嵌套方式实现SSO（十三）](http://www.ibloger.net/article/3128.html)
 
+目录proxy-sso => 对应 [Cas 5.2.x版本使用 —— 代理认证实现SSO（十四）](http://www.ibloger.net/article/3129.html)
+
 ### 教程目录
 
 - [Cas 5.2.x版本单点登录服务安装 —— SpringBoot内部运行（一）](http://www.ibloger.net/article/3114.html)
@@ -63,10 +65,8 @@ GitHub地址：https://github.com/X-rapido/CAS_SSO_Record
 - [Cas 5.2.x版本使用 —— Service配置介绍（十一）](http://www.ibloger.net/article/3122.html)
 - [Cas 5.2.x版本使用 —— 自定义登录界面 / 自定义主题风格（十二）](http://www.ibloger.net/article/3125.html)
 - [Cas 5.2.x版本使用 —— 客户端使用iframe嵌套方式实现SSO（十三）](http://www.ibloger.net/article/3128.html)
-
-
-
-
+- [Cas 5.2.x版本使用 —— 代理认证实现SSO（十四）](http://www.ibloger.net/article/3129.html)
+- [Cas 5.2.x版本使用 —— 代理认证拓展理解（十五）](http://www.ibloger.net/article/3130.html)
 
 
 

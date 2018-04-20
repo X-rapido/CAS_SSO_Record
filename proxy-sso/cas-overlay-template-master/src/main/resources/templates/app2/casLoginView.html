@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title th:text="${#themes.code('pageTitle')}"></title>
+    <link rel="stylesheet" th:href="@{${#themes.code('css.file')}}" />
+</head>
+
+<body>
+<h3 th:text="${#themes.code('pageTitle')}"></h3>
+<div>
+    <form id="loginForm" method="post" th:object="${credential}">
+        <div th:if="${#fields.hasErrors('*')}"><span th:each="err : ${#fields.errors('*')}" th:utext="${err}" />
+        </div>
+        <h4 th:utext="#{screen.welcome.instructions}"></h4>
+        <section class="row">
+            <label for="username" th:utext="#{screen.welcome.label.netid}" />
+            <div th:unless="${openIdLocalId}">
+                <input class="required" id="username" size="25" tabindex="1" type="text" th:disabled="${guaEnabled}" th:field="*{username}" th:accesskey="#{screen.welcome.label.netid.accesskey}" autocomplete="off" th:value="casuser" />
+            </div>
+        </section>
+        <section class="row">
+            <label for="password" th:utext="#{screen.welcome.label.password}" />
+            <div>
+                <input class="required" type="password" id="password" size="25" tabindex="2" th:accesskey="#{screen.welcome.label.password.accesskey}" th:field="*{password}" autocomplete="off" th:value="Mellon" />
+            </div>
+        </section>
+
+        <section>
+            <input type="hidden" name="execution" th:value="${flowExecutionKey}"/>
+            <input type="hidden" name="_eventId" value="submit"/>
+            <input type="hidden" name="geolocation"/>
+            <input class="btn btn-submit btn-block"
+                   accesskey="l"
+                   th:value="#{screen.welcome.button.login}"
+                   tabindex="6"
+                   type="button" onclick="login()"/>
+        </section>
+    </form>
+</div>
+<script>
+    var targetUrl = '';
+    window.onload = function () {
+        targetUrl = window.location.search.split('=')[1];
+        console.log('来自父窗口：', targetUrl);
+    };
+
+    function login() {
+        document.getElementById('loginForm').submit();
+        parent.postMessage(JSON.stringify({target: targetUrl}), '*');
+    }
+
+</script>
+</body>
+</html>
