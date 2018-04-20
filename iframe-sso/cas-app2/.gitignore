@@ -1,0 +1,38 @@
+
+# 以斜杠“/”开头表示目录；
+# 以星号“*”通配多个字符；
+# 以问号“?”通配单个字符
+# 以方括号“[]”包含单个字符的匹配列表；
+# 以叹号“!”表示不忽略(跟踪)匹配到的文件或目录；
+
+# 忽略文件
+.DS_Store
+*/.settings/
+*/.DS_Store
+*.class
+*.iml
+*/*.iml
+**/*.iml
+*.log
+.classpath
+
+# 包文件 #
+*.jar
+*.war
+*.zip
+*.tar.gz
+*.rar
+
+# 忽略文件夹
+.settings/
+.gradle/
+.externalToolBuilders/
+
+**/target/
+**/build/
+**/out/
+classes/
+**/logs/
+**/.idea/
+.idea/
+

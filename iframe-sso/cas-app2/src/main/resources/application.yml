@@ -1,0 +1,11 @@
+logging:
+  file: "logs/config/demo-xx.log"
+info:
+  name : "前端 App2 项目"
+
+server:
+  #端口号
+  port: 8282
+  context-path: /water
+
+ 

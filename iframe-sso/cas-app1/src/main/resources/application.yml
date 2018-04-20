@@ -1,0 +1,10 @@
+logging:
+  file: "logs/config/demo-xx.log"
+info:
+  name : "前端 App1 项目"
+
+server:
+  port: 8181
+  context-path: /fire
+
+ 

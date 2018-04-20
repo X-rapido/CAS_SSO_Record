@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>World</title>
+</head>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="assets/js/common.js"></script>
+<script>
+    function load() {
+        $.ajax({
+            type: "GET",
+            url: getRootPath() + "/api/world",
+            success: function (msg) {
+                console.info("请求成功");
+                console.info(msg);
+                $("#msg").text(msg);
+            },
+            error: function (msg) {
+                console.info("请求Error");
+                console.info(msg);
+            }
+        });
+    }
+</script>
+<body onload="load()">
+
+访问 World.html
+
+<h1 id="msg"></h1>
+
+</body>
+</html>

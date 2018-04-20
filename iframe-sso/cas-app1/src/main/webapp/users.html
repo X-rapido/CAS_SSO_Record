@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户列表数据</title>
+</head>
+
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="assets/js/common.js"></script>
+
+<script>
+    function load() {
+        $.ajax({
+            type: "GET",
+            async: false,
+            cache: false,
+            url: getRootPath() + "/api/users",
+            success: function (msg) {
+                console.info("请求成功");
+                console.info(msg);
+
+                $.each(msg, function (i, item) {
+                    $("#msg").append(JSON.stringify(item)).append('<br/>');
+                });
+            },
+            error: function (msg) {
+                console.info("请求Error");
+                console.info(msg);
+            }
+        });
+    }
+</script>
+<body onload="load()">
+
+访问 users.html
+
+<h1>用户列表</h1>
+<div id="msg"></div>
+
+</body>
+</html>

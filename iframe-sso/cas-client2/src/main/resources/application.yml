@@ -1,0 +1,19 @@
+logging:
+  #日志存储地址
+  file: "logs/config/demo-xx.log"
+info:
+  name : "app2 后端接口"
+
+server:
+  port: 8889
+  context-path: /
+  
+spring:
+  mvc:
+    view:
+      # 页面默认前缀目录
+      prefix: /WEB-INF/jsp/
+      # 响应页面默认后缀
+      suffix: .jsp
+ 
+ 

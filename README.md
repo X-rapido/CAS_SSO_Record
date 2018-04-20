@@ -26,6 +26,7 @@ GitHub地址：https://github.com/X-rapido/CAS_SSO_Record
 - CAS 5.2.x 单点登录 —— 代理认证演示：http://v.qq.com/x/page/y0614dn6mpr.html
 - CAS 5.2.x 单点登录 —— Restful API方式 ：http://v.qq.com/x/page/w0614c07580.html
 
+#### 项目目录
 
 目录1 => 对应  [Cas 5.2.x版本单点登录服务安装 —— SpringBoot内部运行（一）](http://www.ibloger.net/article/3114.html)
 
@@ -45,6 +46,8 @@ GitHub地址：https://github.com/X-rapido/CAS_SSO_Record
 
 目录custom-themes-sso => 对应 [Cas 5.2.x版本使用 —— 自定义登录界面 / 自定义主题风格（十二）](http://www.ibloger.net/article/3125.html)
 
+目录iframe-sso => 对应 [Cas 5.2.x版本使用 —— 客户端使用iframe嵌套方式实现SSO（十三）](http://www.ibloger.net/article/3128.html)
+
 ### 教程目录
 
 - [Cas 5.2.x版本单点登录服务安装 —— SpringBoot内部运行（一）](http://www.ibloger.net/article/3114.html)
@@ -59,3 +62,15 @@ GitHub地址：https://github.com/X-rapido/CAS_SSO_Record
 - [Cas 5.2.x版本使用 —— 退出登录后跳转到指定页面（十）](http://www.ibloger.net/article/3047.html)
 - [Cas 5.2.x版本使用 —— Service配置介绍（十一）](http://www.ibloger.net/article/3122.html)
 - [Cas 5.2.x版本使用 —— 自定义登录界面 / 自定义主题风格（十二）](http://www.ibloger.net/article/3125.html)
+- [Cas 5.2.x版本使用 —— 客户端使用iframe嵌套方式实现SSO（十三）](http://www.ibloger.net/article/3128.html)
+
+
+
+
+
+
+
+
+
+
+

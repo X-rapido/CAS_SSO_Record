@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录界面</title>
+</head>
+
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="assets/js/common.js"></script>
+<script>
+
+    $(document).ready(function () {
+
+        var cas_loginUrl = "https://cas.server.com:8443/cas/login";
+        var service = GetQueryString("service");
+
+        if (service == null) {
+            $('#myIframe').attr('src', cas_loginUrl);
+        } else {
+            cas_loginUrl = cas_loginUrl + "?service=" + service;
+            $('#myIframe').attr('src', cas_loginUrl);
+        }
+    });
+
+</script>
+<body>
+
+<h2>Iframe方式嵌入Cas Server自定义登录页</h2>
+<iframe id="myIframe" src="" width="1000px" style="height: 800px;">
+
+</iframe>
+<script>
+    //接收子窗口消息
+    window.addEventListener("message", function (e) {
+        console.info('来自子窗口:', e);
+        setTimeout(function () {
+            window.location.replace(decodeURIComponent(JSON.parse(e.data).target));// 必须decodeURIComponent页面才刷新，否则有问题
+        }, 1500)
+    }, false);
+</script>
+</body>
+</html>
