@@ -67,7 +67,7 @@ GitHub地址：https://github.com/X-rapido/CAS_SSO_Record
 - [Cas 5.2.x版本使用 —— 客户端使用iframe嵌套方式实现SSO（十三）](http://www.ibloger.net/article/3128.html)
 - [Cas 5.2.x版本使用 —— 代理认证实现SSO（十四）](http://www.ibloger.net/article/3129.html)
 - [Cas 5.2.x版本使用 —— 代理认证拓展理解（十五）](http://www.ibloger.net/article/3130.html)
-
+- [Cas 5.2.x版本使用 —— 存储Ticket到redis（十六）](http://www.ibloger.net/article/3131.html)
 
 
 
