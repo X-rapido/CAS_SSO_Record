@@ -1,0 +1,10 @@
+logging:
+  file: "logs/app1.log"
+  level: warn
+info:
+  name : "前端 App1 项目"
+
+server:
+  port: 8181
+  context-path: /fire
+  address: app1.com

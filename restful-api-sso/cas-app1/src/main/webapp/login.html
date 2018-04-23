@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>App1 登录界面</title>
+</head>
+
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="assets/js/common.js"></script>
+<script>
+    $(document).ready(function () {
+        var service = GetQueryString("service");
+
+        // 如果为空，表示直接进入登录页面
+        if (service == null){
+            service = "http://app1.com:8181/fire/index.html";
+        }
+
+        console.info("service："+service);
+
+        $("#service").val(service); // 受访受限url的地址
+
+        // 新进行判断用户是否登录过
+        $.ajax({
+            method: "GET",
+            url: "http://sso.server.com:9000/sso/user/check",
+            data: {'service': service},
+            xhrFields: {
+                withCredentials: true
+            },
+            crossDomain:true,
+            dataType: "jsonp",
+            jsonp: "callback",
+            // cache: false,
+            success: function (result) {
+                console.info("请求成功");
+                console.info(result);
+                if (result.status == 1) {
+                    // 设置 302 重定向跳转
+                    window.location.href = result.data;
+                }else{
+                    // 显示登录页面
+                    $("#loginDiv").show("slow");
+                }
+            },
+            error: function (data) {
+                console.info("请求失败");
+                $("#loginDiv").show("slow");
+            }
+        });
+    });
+</script>
+<body>
+
+<h2>App1 用户登录</h2>
+
+<div id="loginDiv" style="display: none">
+    <form action="http://sso.server.com:9000/sso/user/login" method="post">
+        <table>
+            <tr>
+                <td>用户名:</td>
+                <td><input id="username" name="username" type="text" ></td>
+            </tr>
+            <tr>
+                <td>密 码:</td>
+                <td><input id="password" name="password" type="password"></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="hidden" name="service" id="service" value="">
+                    <input type="submit" value="登录">
+                </td>
+                <td><input type="reset"></td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+logging:
+  #日志存储地址
+  file: "logs/sso-server.log"
+  level: info
+info:
+  name : "自定义SSO-Server，管理登录用户"
+
+
+server:
+  port: 9000
+  context-path: /sso
+  address: sso.server.com
+
+spring:
+    #MVC配置
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+
+      # Redis配置
+  redis:
+        ## Redis数据库索引（默认为0）
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    password:
+    pool:
+        # 最大连接数
+      max-active: 8
+        # 最大空闲链接
+      max-idle: 8
+        # 最大阻塞等待时间（负值无限制）
+      max-wait: -1
+        # 最小空闲链接
+      min-idle: 0
+
+      # 热部署
+  devtools:
+    restart:
+      enabled: false
+    livereload:
+      enabled: false

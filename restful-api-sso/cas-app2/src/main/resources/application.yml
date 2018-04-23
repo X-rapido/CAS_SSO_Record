@@ -1,0 +1,9 @@
+logging:
+  file: "logs/app2.log"
+info:
+  name : "前端 App2 项目"
+
+server:
+  port: 8282
+  context-path: /water
+  address: app2.com

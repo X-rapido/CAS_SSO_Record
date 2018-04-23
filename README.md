@@ -5,6 +5,7 @@
 - **个人网址**
   - 程序喵：http://www.ibloger.net / http://www.chengxumiao.net
   - 程序员购书导航指南：http://books.chengxumiao.net
+  - QQ：1056856191
 
 GitHub地址：https://github.com/X-rapido/CAS_SSO_Record
 
@@ -50,6 +51,8 @@ GitHub地址：https://github.com/X-rapido/CAS_SSO_Record
 
 目录proxy-sso => 对应 [Cas 5.2.x版本使用 —— 代理认证实现SSO（十四）](http://www.ibloger.net/article/3129.html)
 
+目录restful-api-sso => 对应 [Cas 5.2.x版本使用 —— 配置 Swagger API 集成（十九）](http://www.ibloger.net/article/3136.html)
+
 ### 教程目录
 
 - [Cas 5.2.x版本单点登录服务安装 —— SpringBoot内部运行（一）](http://www.ibloger.net/article/3114.html)
@@ -68,7 +71,9 @@ GitHub地址：https://github.com/X-rapido/CAS_SSO_Record
 - [Cas 5.2.x版本使用 —— 代理认证实现SSO（十四）](http://www.ibloger.net/article/3129.html)
 - [Cas 5.2.x版本使用 —— 代理认证拓展理解（十五）](http://www.ibloger.net/article/3130.html)
 - [Cas 5.2.x版本使用 —— 存储Ticket到redis（十六）](http://www.ibloger.net/article/3131.html)
-
+- [Cas 5.2.x版本使用 —— Restful API 方式验证Ticket（十七）](http://www.ibloger.net/article/3133.html)
+- [Cas 5.2.x版本使用 —— Restful API 方式实现SSO（十八）](http://www.ibloger.net/article/3135.html)
+- [Cas 5.2.x版本使用 —— 配置 Swagger API 集成（十九）](http://www.ibloger.net/article/3136.html)
 
 
 
