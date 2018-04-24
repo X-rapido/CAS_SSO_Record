@@ -11,14 +11,14 @@ GitHub地址：https://github.com/X-rapido/CAS_SSO_Record
 
 > 以下内容根据自己的理解编写，有不正确的地方，还望朋友们及时告知，并给出解决方案，感激不尽！
 
-#### 框架说明
+### 框架说明
 
 - Maven 或 Gradle
 - springboot 1.5.10
 - cas-server 5.2.2
 - cas-client 3.5.0
 
-#### 视频演示
+### 视频演示
 
 - CAS 5.1.2 基本的演示，说明和安装过程：https://v.qq.com/x/page/j063197nnmj.html
 - CAS 5.2.x 单点登录 —— 实现单点登录演示：http://v.qq.com/x/page/d063304k06a.html
@@ -28,7 +28,54 @@ GitHub地址：https://github.com/X-rapido/CAS_SSO_Record
 - CAS 5.2.x 单点登录 —— Restful API方式 ：http://v.qq.com/x/page/w0614c07580.html
 - Cas 5.2.2版本 —— 通过邮箱找回用户密码: https://v.qq.com/x/page/e06362scktw.html
 
-#### 项目目录
+### 项目目录
+
+```markdown
+├── README.md
+├── change-static-password
+│   └── cas-overlay-template-master
+├── custom-password-verification
+│   └── cas-overlay-template-master
+├── custom-themes-sso
+│   ├── cas-app1
+│   ├── cas-app2
+│   └── cas-overlay-template-master
+├── email-reset-password
+│   └── cas-overlay-template-master
+├── embed-tomcat-run
+│   └── cas-overlay-template-master
+├── iframe-sso
+│   ├── cas-app1
+│   ├── cas-app2
+│   ├── cas-client1
+│   ├── cas-client2
+│   └── cas-overlay-template-master
+├── jdbc-sso
+│   └── cas-overlay-template-master
+├── outer-tomcat-run
+│   └── server.xml
+├── proxy-sso
+│   ├── cas-overlay-template-master
+│   ├── client1
+│   └── client2
+├── rest-sso
+│   ├── cas-overlay-template-master
+│   └── cas_db
+├── restful-api-sso
+│   ├── cas-app1
+│   ├── cas-app2
+│   ├── cas-client1
+│   ├── cas-client2
+│   ├── cas-overlay-template-master
+│   └── sso-server
+├── simple-sso
+│   ├── cas-app1
+│   ├── cas-app2
+│   └── cas-overlay-template-master
+├── st-storage-redis
+└── yml-config
+    └── cas-overlay-template-master
+```
 
 目录     | 文档
 -------- | ---
@@ -69,3 +116,17 @@ email-reset-password | [Cas 5.2.x版本使用 —— 通过邮箱重置用户密
 - [Cas 5.2.x版本使用 —— Restful API 方式实现SSO（十八）](http://www.ibloger.net/article/3135.html)
 - [Cas 5.2.x版本使用 —— 配置 Swagger API 集成（十九）](http://www.ibloger.net/article/3136.html)
 - [Cas 5.2.x版本使用 —— 通过邮箱重置用户密码（二十）](http://www.ibloger.net/article/3137.html)
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
