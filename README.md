@@ -26,34 +26,26 @@ GitHub地址：https://github.com/X-rapido/CAS_SSO_Record
 - CAS 5.2.x 单点登录 —— Iframe嵌入方式演示：http://v.qq.com/x/page/p0614wjt2gy.html
 - CAS 5.2.x 单点登录 —— 代理认证演示：http://v.qq.com/x/page/y0614dn6mpr.html
 - CAS 5.2.x 单点登录 —— Restful API方式 ：http://v.qq.com/x/page/w0614c07580.html
+- Cas 5.2.2版本 —— 通过邮箱找回用户密码: https://v.qq.com/x/page/e06362scktw.html
 
 #### 项目目录
 
-目录1 => 对应  [Cas 5.2.x版本单点登录服务安装 —— SpringBoot内部运行（一）](http://www.ibloger.net/article/3114.html)
+目录     | 文档
+-------- | ---
+embed-tomcat-run | [Cas 5.2.x版本单点登录服务安装 —— SpringBoot内部运行（一）](http://www.ibloger.net/article/3114.html)
+outer-tomcat-run | [Cas 5.2.x版本单点登录服务安装 —— 外部Tomcat运行（二）](http://www.ibloger.net/article/3115.html)
+change-static-password | [Cas 5.2.x版本使用 —— 修改默认的用户名和密码（三）](http://www.ibloger.net/article/3116.html)
+yml-config | [Cas 5.2.x版本使用 —— 通过yml的方式配置（四）](http://www.ibloger.net/article/3118.html)
+jdbc-sso |  [Cas 5.2.x版本使用 —— 单点登录JDBC认证（五）](http://www.ibloger.net/article/3119.html)
+custom-password-verification | [Cas 5.2.x版本使用 —— 自定义密码验证（六）](http://www.ibloger.net/article/3123.html)
+rest-sso | [Cas 5.2.x版本使用 —— 单点登录自定义REST认证（七）](http://www.ibloger.net/article/3120.html)
+simple-sso | [Cas 5.2.x版本使用 —— 实现SSO单点登录（九）](http://www.ibloger.net/article/3126.html)
+custom-themes-sso | [Cas 5.2.x版本使用 —— 自定义登录界面 / 自定义主题风格（十二）](http://www.ibloger.net/article/3125.html)
+iframe-sso | [Cas 5.2.x版本使用 —— 客户端使用iframe嵌套方式实现SSO（十三）](http://www.ibloger.net/article/3128.html)
+proxy-sso | [Cas 5.2.x版本使用 —— 代理认证实现SSO（十四）](http://www.ibloger.net/article/3129.html)
+restful-api-sso | [Cas 5.2.x版本使用 —— 配置 Swagger API 集成（十九）](http://www.ibloger.net/article/3136.html)
+email-reset-password | [Cas 5.2.x版本使用 —— 通过邮箱重置用户密码（二十）](http://www.ibloger.net/article/3137.html)
 
-目录2 => 对应 [Cas 5.2.x版本单点登录服务安装 —— 外部Tomcat运行（二）](http://www.ibloger.net/article/3115.html)
-
-目录3 => 对应 [Cas 5.2.x版本使用 —— 修改默认的用户名和密码（三）](http://www.ibloger.net/article/3116.html)
-
-目录4 => 对应 [Cas 5.2.x版本使用 —— 通过yml的方式配置（四）](http://www.ibloger.net/article/3118.html)
-
-目录5 => 对应 [Cas 5.2.x版本使用 —— 单点登录JDBC认证（五）](http://www.ibloger.net/article/3119.html)
-
-目录6 => 对应 [Cas 5.2.x版本使用 —— 自定义密码验证（六）](http://www.ibloger.net/article/3123.html)
-
-目录7 => 对应 [Cas 5.2.x版本使用 —— 单点登录自定义REST认证（七）](http://www.ibloger.net/article/3120.html)
-
-目录simple-sso => 对应 [Cas 5.2.x版本使用 —— 实现SSO单点登录（九）](http://www.ibloger.net/article/3126.html)
-
-目录custom-themes-sso => 对应 [Cas 5.2.x版本使用 —— 自定义登录界面 / 自定义主题风格（十二）](http://www.ibloger.net/article/3125.html)
-
-目录iframe-sso => 对应 [Cas 5.2.x版本使用 —— 客户端使用iframe嵌套方式实现SSO（十三）](http://www.ibloger.net/article/3128.html)
-
-目录proxy-sso => 对应 [Cas 5.2.x版本使用 —— 代理认证实现SSO（十四）](http://www.ibloger.net/article/3129.html)
-
-目录restful-api-sso => 对应 [Cas 5.2.x版本使用 —— 配置 Swagger API 集成（十九）](http://www.ibloger.net/article/3136.html)
-
-目录email-reset-password => 对应 [Cas 5.2.x版本使用 —— 通过邮箱重置用户密码（二十）](http://www.ibloger.net/article/3137.html)
 
 ### 教程目录
 
@@ -77,7 +69,3 @@ GitHub地址：https://github.com/X-rapido/CAS_SSO_Record
 - [Cas 5.2.x版本使用 —— Restful API 方式实现SSO（十八）](http://www.ibloger.net/article/3135.html)
 - [Cas 5.2.x版本使用 —— 配置 Swagger API 集成（十九）](http://www.ibloger.net/article/3136.html)
 - [Cas 5.2.x版本使用 —— 通过邮箱重置用户密码（二十）](http://www.ibloger.net/article/3137.html)
-
-
-
-
