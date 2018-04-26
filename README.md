@@ -26,7 +26,8 @@ GitHub地址：https://github.com/X-rapido/CAS_SSO_Record
 - CAS 5.2.x 单点登录 —— Iframe嵌入方式演示：http://v.qq.com/x/page/p0614wjt2gy.html
 - CAS 5.2.x 单点登录 —— 代理认证演示：http://v.qq.com/x/page/y0614dn6mpr.html
 - CAS 5.2.x 单点登录 —— Restful API方式 ：http://v.qq.com/x/page/w0614c07580.html
-- Cas 5.2.2版本 —— 通过邮箱找回用户密码: https://v.qq.com/x/page/e06362scktw.html
+- Cas 5.2.x 使用 —— 通过邮箱找回用户密码: https://v.qq.com/x/page/e06362scktw.html
+- Cas 5.2.x 使用 —— Management 服务管理登录Demo: https://v.qq.com/x/page/l063881p938.html
 
 ### 项目目录
 
@@ -92,7 +93,7 @@ iframe-sso | [Cas 5.2.x版本使用 —— 客户端使用iframe嵌套方式实�
 proxy-sso | [Cas 5.2.x版本使用 —— 代理认证实现SSO（十四）](http://www.ibloger.net/article/3129.html)
 restful-api-sso | [Cas 5.2.x版本使用 —— 配置 Swagger API 集成（十九）](http://www.ibloger.net/article/3136.html)
 email-reset-password | [Cas 5.2.x版本使用 —— 通过邮箱重置用户密码（二十）](http://www.ibloger.net/article/3137.html)
-
+cas-management-run | [Cas 5.2.x版本使用 —— Management 服务管理搭建（二十二）](http://www.ibloger.net/article/3139.html)
 
 ### 教程目录
 
@@ -116,7 +117,8 @@ email-reset-password | [Cas 5.2.x版本使用 —— 通过邮箱重置用户密
 - [Cas 5.2.x版本使用 —— Restful API 方式实现SSO（十八）](http://www.ibloger.net/article/3135.html)
 - [Cas 5.2.x版本使用 —— 配置 Swagger API 集成（十九）](http://www.ibloger.net/article/3136.html)
 - [Cas 5.2.x版本使用 —— 通过邮箱重置用户密码（二十）](http://www.ibloger.net/article/3137.html)
-
+- [Cas 5.2.x版本使用 —— 存储Service信息到数据库（二十一）](http://www.ibloger.net/article/3139.html)
+- [Cas 5.2.x版本使用 —— Management 服务管理搭建（二十二）](http://www.ibloger.net/article/3139.html)
 
 
 
